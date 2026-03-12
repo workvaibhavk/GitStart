@@ -337,7 +337,7 @@
             </div>
             <div id="init" class="active gap-[5px] flex flex-col py-6 px-6">
                 <div class="">
-                    <span class="text-[#00ff88]">init$</span>
+                    <span class="text-[#00ff88]">$</span>
                     <span class="text-[#e8e8f0]">mkdir my-project && cd my-project</span>
                 </div>
                 <div class="">
@@ -393,43 +393,60 @@
                         a1b2c3d (HEAD → main) docs: add README
                     </span>
                 </div>
-                <br> <br>
-                <br>
-                <br>
-                <br>
 
                 <div class="">
-                    <span class="text-[#7070a0]">commit on main </span>
-                    <span class="text-[#f59e0b]">initial commit</span>
+                    <!-- <span class="text-[#7070a0]">commit on main </span> -->
+                    <!-- <span class="text-[#f59e0b]">initial commit</span> -->
                     <!-- <span class="text-[#e8e8f0]">git init my-first-project</span> -->
                 </div>
                 <div class="">
-                    <span class="text-[#7070a0]">1 file changed, 1 insertion(+)</span>
+                    <!-- <span class="text-[#7070a0]">1 file changed, 1 insertion(+)</span> -->
                     <!-- <span class="text-[#f59e0b]">initial commit</span> -->
                     <!-- <span class="text-[#e8e8f0]">git init my-first-project</span> -->
                 </div>
             </div>
             <div id="branch" class="hidden gap-[5px] flex flex-col py-6 px-6">
                 <div class="">
-                    <span class="text-[#00ff88]">branch$</span>
-                    <span class="text-[#e8e8f0]">mkdir my-project && cd my-project</span>
+                    <span class="text-[#00ff88]">$</span>
+                    <span class="text-[#e8e8f0]">branch</span>
+                     <span class="text-[#7070a0]">
+                        # List all Branches</span>
+                </div>
+                <div class="">
+
+                      <span class="ml-2 text-[#00FF88]">
+                        * 
+                        main</span>
                 </div>
                 <div class="">
                     <span class="text-[#00ff88]">$</span>
-                    <span class="text-[#e8e8f0]">git init</span>
-                    <span class="text-[#7070a0]">
-                        # Initialize a new repository</span>
+                    <span class="text-[#e8e8f0]">git checkout -b feature/add-login</span>
+                     <span class="text-[#7070a0]">
+                        # Create & Switch</span>
                 </div>
                 <div class="">
                     <span class="text-[#00FF88]">
-                        Initialized empty Git repository in ./my-project/.git/</span>
+                        Switched to a new branch 'feature/add-login</span>
                     <!-- <span class="text-[#f59e0b]">my-first-project/.git/</span> -->
                     <!-- <span class="text-[#e8e8f0]">git init my-first-project</span> -->
                 </div>
                 <div class="">
                     <span class="text-[#00ff88]">$</span>
+                    <span class="text-[#e8e8f0]">git add login.js &&  git commit -m "feat: add login"</span>
+                    </div>
+                    <div class="">
+                     <span class="text-[#00FF88]">
+                       [feature/add-login b2c34e] feat: add login</span>
+                </div>
+                <div class="">
+                    <span class="text-[#00ff88]">$</span>
                     <span class="text-[#e8e8f0]">
-                        echo "Hello World" > README.md</span>
+                        git checkout main</span>
+                </div>
+                <div class="">
+                    <span class="text-[#00ff88]">$</span>
+                    <span class="text-[#e8e8f0]">
+                        git merge feature/add-login</span>
                 </div>
                 <div class="">
                     <span class="text-[#00ff88]">$</span>
