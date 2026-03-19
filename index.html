@@ -11,32 +11,46 @@
         href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Syne:wght@400..800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/favicon-m.png" type="image/png">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 </head>
 
 <body class="min-h-screen bg-[#060606]">
+
     <script src="script.js"> </script>
-    <nav id="nav" class="flex items-center justify-around py-6 sticky top-[0px] transition-colors">
+
+    <nav id="nav" class="flex items-center justify-around py-6 z-999 sticky top-[0px] transition-colors">
         <div class="left text-xl">
-            <span class="text-[#00ff88]">git</span>
-            <span class="text-[#e8e8f0]">start</span>
+            <a href="#">
+                <span class="text-[#00ff88]">git</span>
+                <span class="text-[#e8e8f0]">start</span>
+            </a>
+
         </div>
         <div class="center">
-            <ul class="flex gap-8 text-[#7070a0]">
-                <li>Concepts</li>
-                <li>Workflow</li>
-                <li>Practice</li>
-                <li>Contribute</li>
-                <li>Resources</li>
-            </ul>
+        </div>
+        <ul class="flex gap-8 text-[#7070a0]">
+            <li class="hover:text-[#00ff88] transition-colors"> <a href="#Concepts">Concepts</a></li>
+            <li class="hover:text-[#00ff88] transition-colors"> <a href="#Workflow">Workflow</a></li>
+            <li class="hover:text-[#00ff88] transition-colors"> <a href="#Practice">Practice</a></li>
+            <li class="hover:text-[#00ff88] transition-colors"> <a href="#Contribute">Contribute</a></li>
+            <li class="hover:text-[#00ff88] transition-colors"> <a href="#Resources">Resources</a></li>
+        </ul>
         </div>
         <div class="right">
-            <button class="bg-[#00ff88] py-2 px-4 font-semibold">
+            <!-- <button
+                class="bg-[#00ff88] py-2 px-4 font-semibold border-2 border-[#7c3aed]     transform-gpu -translate-x-1 -translate-y-1 transition-transform duration-300 ease-[cubic-bezier(0.7,0,0.2,1)] hover:-translate-x-2 hover:-translate-y-2">
+                Get Started
+            </button> -->
+
+            <button
+                class="bg-[#00ff88] py-2 px-6 font-semibold transform-gpu -translate-x-1 -translate-y-1 shadow-[4px_4px_0px_#7c3aed] transition-all duration-150 hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[6px_6px_0px_#7c3aed] active:translate-x-0 active:translate-y-0 active:shadow-[2px_2px_0px_#7c3aed]">
                 Get Started
             </button>
         </div>
     </nav>
+
     <section class="text-center flex flex-col items-center justify-center gap-8 my-8">
         <h1 id="herotxt" class="text-8xl font-extrabold  ">
             <span class="text-[#7070a0]">Learn</span>
@@ -50,13 +64,13 @@
             experience needed.</p>
         <div class="inline">
             <button class="bg-[#00ff88] py-2 px-4 font-semibold">
-                <!-- Open Source Learning Platform -->
                 Start Learning </button>
             <button class="border border-[#e8e8f0] text-[#e8e8f0] py-2 px-4 font-semibold">
                 Get Started
             </button>
         </div>
     </section>
+
     <section class="flex flex-col items-center justify-center my-8">
         <div class="bg-[#111118] w-150 rounded-xl border border-[#2a2a3e]">
             <div
@@ -64,10 +78,7 @@
                 <span class="bg-[#FF605C] h-3 w-3 rounded-full inline-block"></span>
                 <span class="bg-[#FFBD44] h-3 w-3 rounded-full inline-block"></span>
                 <span class="bg-[#00CA4E] h-3 w-3 rounded-full inline-block"></span>
-                <span class="text-[#7070a0] mx-4">
-                    bash — gitstart@terminal
-                    <!-- f59e0b -->
-                </span>
+                <span class="text-[#7070a0] mx-4">bash — gitstart@terminal</span>
 
             </div>
             <div class="py-6 px-6">
@@ -78,7 +89,6 @@
                 <div>
                     <span class="text-[#7070a0]">Initialized empty repository in</span>
                     <span class="text-[#f59e0b]">my-first-project/.git/</span>
-                    <!-- <span class="text-[#e8e8f0]">git init my-first-project</span> -->
                 </div>
                 <div>
                     <span class="text-[#00ff88]">$</span>
@@ -91,12 +101,10 @@
                 <div>
                     <span class="text-[#7070a0]">commit on main </span>
                     <span class="text-[#f59e0b]">initial commit</span>
-                    <!-- <span class="text-[#e8e8f0]">git init my-first-project</span> -->
                 </div>
                 <div>
                     <span class="text-[#7070a0]">1 file changed, 1 insertion(+)</span>
-                    <!-- <span class="text-[#f59e0b]">initial commit</span> -->
-                    <!-- <span class="text-[#e8e8f0]">git init my-first-project</span> -->
+                    ]
                 </div>
                 <div class="mt-2">
                     <span class="text-[#00ff88] ">$</span>
@@ -123,7 +131,8 @@
         </div>
 
     </section>
-    <section class="w-10/12 mx-auto py-12">
+
+    <section id="Concepts" class="w-10/12 mx-auto py-12">
         <h2 class="text-[#00ff88] text-xl"> —— 01 GIT BASICS</h2>
         <h1 id="herotxt" class="text-7xl mb-6 max-w-4xl font-extrabold text-[#e8e8f0]">
             Core Concepts Explained Simply
@@ -133,7 +142,7 @@
 
         <div class="parent bg-[#] grid grid-cols-3 gap-[2px] ">
             <div
-                class="card bg-[#111118] flex flex-col gap-4 py-8 px-8  border-2 border-[#2a2a3e]  hover:bg-[#1a1a26] transition-colors">
+                class="card bg-[#111118] flex flex-col gap-4 py-8 px-8  border-2 border-[#2a2a3e] hover:bg-[#1a1a26] transition-colors hover:border-t-3 hover:border-t-[#00ff88]">
                 <p class="text-3xl">🗃️</p>
                 <p class="text-[#00ff88] text-sm">01 —— Concept</p>
                 <p class="text-[#e8e8f0] text-xl font-semibold">Repository</p>
@@ -145,7 +154,7 @@
                 </div>
             </div>
             <div
-                class="card bg-[#111118] flex flex-col gap-4 py-8 px-8 border-2 border-[#2a2a3e]   hover:bg-[#1a1a26] transition-colors">
+                class="card bg-[#111118] flex flex-col gap-4 py-8 px-8 border-2 border-[#2a2a3e]   hover:bg-[#1a1a26] transition-colors hover:border-t-3 hover:border-t-[#00ff88]">
                 <p class="text-3xl">📸</p>
                 <p class="text-[#00ff88] text-sm">02 —— Concept</p>
                 <p class="text-[#e8e8f0] text-xl font-semibold">Commit</p>
@@ -156,7 +165,7 @@
                 </div>
             </div>
             <div
-                class="card bg-[#111118] flex flex-col gap-4 py-8 px-8 border-2 border-[#2a2a3e]   hover:bg-[#1a1a26] transition-colors">
+                class="card bg-[#111118] flex flex-col gap-4 py-8 px-8 border-2 border-[#2a2a3e]   hover:bg-[#1a1a26] transition-colors hover:border-t-3 hover:border-t-[#00ff88]">
                 <p class="text-3xl">🌿</p>
                 <p class="text-[#00ff88] text-sm">03 —— Concept</p>
                 <p class="text-[#e8e8f0] text-xl font-semibold">Branch</p>
@@ -167,7 +176,7 @@
                 </div>
             </div>
             <div
-                class="card bg-[#111118] flex flex-col gap-4 py-8 px-8 border-2 border-[#2a2a3e]   hover:bg-[#1a1a26] transition-colors">
+                class="card bg-[#111118] flex flex-col gap-4 py-8 px-8 border-2 border-[#2a2a3e]   hover:bg-[#1a1a26] transition-colors hover:border-t-3 hover:border-t-[#00ff88]">
                 <p class="text-3xl">🔀</p>
                 <p class="text-[#00ff88] text-sm">04 —— Concept</p>
                 <p class="text-[#e8e8f0] text-xl font-semibold">Merge</p>
@@ -178,7 +187,7 @@
                 </div>
             </div>
             <div
-                class="card bg-[#111118] flex flex-col gap-4 py-8 px-8 border-2 border-[#2a2a3e]   hover:bg-[#1a1a26] transition-colors">
+                class="card bg-[#111118] flex flex-col gap-4 py-8 px-8 border-2 border-[#2a2a3e]   hover:bg-[#1a1a26] transition-colors hover:border-t-3 hover:border-t-[#00ff88]">
                 <p class="text-3xl">☁️</p>
                 <p class="text-[#00ff88] text-sm">05 —— Concept</p>
                 <p class="text-[#e8e8f0] text-xl font-semibold">Push & Pull</p>
@@ -189,7 +198,7 @@
                 </div>
             </div>
             <div
-                class="card bg-[#111118] flex flex-col gap-4 py-8 px-8 border-2 border-[#2a2a3e]   hover:bg-[#1a1a26] transition-colors">
+                class="card bg-[#111118] flex flex-col gap-4 py-8 px-8 border-2 border-[#2a2a3e]   hover:bg-[#1a1a26] transition-colors hover:border-t-3 hover:border-t-[#00ff88]">
                 <p class="text-3xl">🔱</p>
                 <p class="text-[#00ff88] text-sm">06 —— Concept</p>
                 <p class="text-[#e8e8f0] text-xl font-semibold">Fork</p>
@@ -203,7 +212,8 @@
         </div>
 
     </section>
-    <section class="w-10/12 mx-auto py-12">
+
+    <section id="Workflow" class="w-10/12 mx-auto py-12">
         <h2 class="text-[#00ff88] text-xl"> —— 02 Contribution Workflow</h2>
         <h1 id="herotxt" class="text-7xl mb-6 max-w-4xl font-extrabold text-[#e8e8f0]">
             Your First PR
@@ -293,7 +303,7 @@
 
     </section>
 
-    <section class="w-10/12 mx-auto py-12">
+    <section id="Practice" class="w-10/12 mx-auto py-16">
         <h2 class="text-[#00ff88] text-xl"> —— 03 Practice</h2>
         <h1 id="herotxt" class="text-7xl mb-6 max-w-4xl font-extrabold text-[#e8e8f0]">
             Hands-On
@@ -311,7 +321,6 @@
                     <span class="bg-[#00CA4E] h-3 w-3 rounded-full inline-block"></span>
                     <span class="text-[#7070a0] mx-4">
                         practice terminal
-                        <!-- f59e0b -->
                     </span>
                 </div>
 
@@ -349,8 +358,6 @@
                 <div>
                     <span class="text-[#00FF88]">
                         Initialized empty Git repository in ./my-project/.git/</span>
-                    <!-- <span class="text-[#f59e0b]">my-first-project/.git/</span> -->
-                    <!-- <span class="text-[#e8e8f0]">git init my-first-project</span> -->
                 </div>
                 <div>
                     <span class="text-[#00ff88]">$</span>
@@ -371,8 +378,6 @@
                     <span class="text-[#00FF88]">
                         Changes to be committed: README.md
                     </span>
-                    <!-- <span class="text-[#f59e0b]">my-first-project/.git/</span> -->
-                    <!-- <span class="text-[#e8e8f0]">git init my-first-project</span> -->
                 </div>
                 <div>
                     <span class="text-[#00ff88]">$</span>
@@ -395,48 +400,40 @@
                 </div>
 
                 <div>
-                    <!-- <span class="text-[#7070a0]">commit on main </span> -->
-                    <!-- <span class="text-[#f59e0b]">initial commit</span> -->
-                    <!-- <span class="text-[#e8e8f0]">git init my-first-project</span> -->
                 </div>
                 <div>
-                    <!-- <span class="text-[#7070a0]">1 file changed, 1 insertion(+)</span> -->
-                    <!-- <span class="text-[#f59e0b]">initial commit</span> -->
-                    <!-- <span class="text-[#e8e8f0]">git init my-first-project</span> -->
                 </div>
             </div>
             <div id="branch" class="hidden gap-[5px] flex flex-col py-6 px-6">
                 <div>
                     <span class="text-[#00ff88]">$</span>
                     <span class="text-[#e8e8f0]">branch</span>
-                     <span class="text-[#7070a0]">
+                    <span class="text-[#7070a0]">
                         # List all Branches</span>
                 </div>
                 <div>
 
-                      <span class="ml-2 text-[#00FF88]">
-                        * 
+                    <span class="ml-2 text-[#00FF88]">
+                        *
                         main</span>
                 </div>
                 <div>
                     <span class="text-[#00ff88]">$</span>
                     <span class="text-[#e8e8f0]">git checkout -b feature/add-login</span>
-                     <span class="text-[#7070a0]">
+                    <span class="text-[#7070a0]">
                         # Create & Switch</span>
                 </div>
                 <div>
                     <span class="text-[#00FF88]">
                         Switched to a new branch 'feature/add-login</span>
-                    <!-- <span class="text-[#f59e0b]">my-first-project/.git/</span> -->
-                    <!-- <span class="text-[#e8e8f0]">git init my-first-project</span> -->
                 </div>
                 <div>
                     <span class="text-[#00ff88]">$</span>
-                    <span class="text-[#e8e8f0]">git add login.js &&  git commit -m "feat: add login"</span>
-                    </div>
-                    <div>
-                     <span class="text-[#00FF88]">
-                       [feature/add-login b2c34e] feat: add login</span>
+                    <span class="text-[#e8e8f0]">git add login.js && git commit -m "feat: add login"</span>
+                </div>
+                <div>
+                    <span class="text-[#00FF88]">
+                        [feature/add-login b2c34e] feat: add login</span>
                 </div>
                 <div>
                     <span class="text-[#00ff88]">$</span>
@@ -447,20 +444,16 @@
                     <span class="text-[#00ff88]">$</span>
                     <span class="text-[#e8e8f0]">
                         git merge feature/add-login</span>
-                           <span class="text-[#7070a0]">
+                    <span class="text-[#7070a0]">
                         # Merge Branch</span>
                 </div>
                 <div>
                     <span class="text-[#00FF88]">
-                        Updating  a1b2c3d..b2c3d4e - Fast-forward                   </span>
-                    <!-- <span class="text-[#f59e0b]">my-first-project/.git/</span> -->
-                    <!-- <span class="text-[#e8e8f0]">git init my-first-project</span> -->
+                        Updating a1b2c3d..b2c3d4e - Fast-forward </span>
                 </div>
                 <div>
                     <span class="text-[#f59e0b]">
-                        Tip: Delete Branches after merging: git branch -d feature/add-login                 </span>
-                    <!-- <span class="text-[#f59e0b]">my-first-project/.git/</span> -->
-                    <!-- <span class="text-[#e8e8f0]">git init my-first-project</span> -->
+                        Tip: Delete Branches after merging: git branch -d feature/add-login </span>
                 </div>
             </div>
             <div id="remote" class="hidden gap-[5px] flex flex-col py-6 px-6">
@@ -472,7 +465,7 @@
                     <span class="text-[#00ff88]">&nbsp;</span>
                     <span class="text-[#e8e8f0]">https://github.com/user/repo.git</span>
                 </div>
-                 <div>
+                <div>
                     <span class="text-[#00ff88]">$</span>
                     <span class="text-[#e8e8f0]">git remote -v</span>
                     <span class="text-[#7070a0]">
@@ -481,12 +474,12 @@
 
 
 
-<div>
-                        <span class="text-[#00ff88]">origin https://github.com/user/repo.git (fetch)</span>
-</div>
-<div>
-                        <span class="text-[#00ff88]">origin https://github.com/user/repo.git (push)</span>
-</div>
+                <div>
+                    <span class="text-[#00ff88]">origin https://github.com/user/repo.git (fetch)</span>
+                </div>
+                <div>
+                    <span class="text-[#00ff88]">origin https://github.com/user/repo.git (push)</span>
+                </div>
 
 
 
@@ -498,40 +491,34 @@
                         # Push to Github</span>
                 </div>
                 <div>
-                    <span class="text-[#00FF88]">
-                        Branch 'main' set up to track 'origin/main'</span>
-                        
-                        </div>
-                        <div>
-                             <span class="text-[#00FF88]">
-                        To https://github.com/user/repo.git -- [new branch] main -> main</span>
-                    <!-- <span class="text-[#f59e0b]">my-first-project/.git/</span> -->
-                    <!-- <span class="text-[#e8e8f0]">git init my-first-project</span> -->
+                    <span class="text-[#00FF88]"> Branch 'main' set up to track 'origin/main'</span>
+
+                </div>
+                <div>
+                    <span class="text-[#00FF88]"> To https://github.com/user/repo.git -- [new branch] main ->
+                        main</span>
                 </div>
                 <div>
                     <span class="text-[#00ff88]">$</span>
                     <span class="text-[#e8e8f0]">
                         git pull origin main</span>
-                        <span class="text-[#7070a0]">
+                    <span class="text-[#7070a0]">
                         # Get latest changes</span>
                 </div>
                 <div>
                     <span class="text-[#00ff88]">Already up to date</span>
-                    
                 </div>
             </div>
             <div id="collab" class="hidden gap-[5px] flex flex-col py-6 px-6">
                 <div>
                     <span class="text-[#00ff88]">$</span>
                     <span class="text-[#e8e8f0]">git clone https://github.com/org/project.git</span>
-                       <span class="text-[#7070a0]">
+                    <span class="text-[#7070a0]">
                         # Clone Repo</span>
                 </div>
                 <div>
                     <span class="text-[#00FF88]">
                         Cloning into 'project'... done.</span>
-                    <!-- <span class="text-[#f59e0b]">my-first-project/.git/</span> -->
-                    <!-- <span class="text-[#e8e8f0]">git init my-first-project</span> -->
                 </div>
                 <div>
                     <span class="text-[#00ff88]">$</span>
@@ -544,30 +531,399 @@
                 <div>
                     <span class="text-[#00FF88]">
                         remote: Create a pull request for 'fix/typo-in-readme'</span>
-                    <!-- <span class="text-[#f59e0b]">my-first-project/.git/</span> -->
-                    <!-- <span class="text-[#e8e8f0]">git init my-first-project</span> -->
                 </div>
-                 <div>
+                <div>
                     <span class="text-[#00FF88]">
                         remote: https://github.com/org/project/pull/new/fix/typo-in-readme</span>
-                    <!-- <span class="text-[#f59e0b]">my-first-project/.git/</span> -->
-                    <!-- <span class="text-[#e8e8f0]">git init my-first-project</span> -->
                 </div>
                 <div>
                     <span class="text-[#f59e0b]">
                         Now open that URL and create your Pull Request!</span>
-                    <!-- <span class="text-[#f59e0b]">my-first-project/.git/</span> -->
-                    <!-- <span class="text-[#e8e8f0]">git init my-first-project</span> -->
-                </div>   
+                </div>
             </div>
         </div>
 
     </section>
 
     <section>
-        <div class="card bg-[#111118]">
-sfgh
+        <div class="parent grid grid-cols-2 w-10/12 mx-auto gap-8">
+            <div
+                class="card bg-[#111118] py-6 px-8 flex flex-col gap-2 border border-[#2a2a3e] hover:border-[#7c3aed] transition-colors">
+                <span class="border border-[#7c3aed] text-[#7c3aed] text-xs uppercase py-1 px-2 w-fit mb-2">Exercise
+                    1</span>
+                <h2 class="text-[#e8e8f0] text-2xl font-bold">Your First Repository</h2>
+                <h3 class="text-[#7070a0] text-xs py-2 mb-2">Set up your local environment and create your
+                    first tracked Git project from scratch.</h3>
+
+
+
+                <div class="">
+                    <div class="">
+                        <span class="text-[#00FF88]"> → </span>
+                        <span class="text-[#e8e8f0] text-sm"> Install Git on your system </span>
+                        <hr class="my-2 text-[#e8e8f0] opacity-24">
+                    </div>
+                    <div class="">
+                        <span class="text-[#00FF88]"> → </span>
+                        <span class="text-[#e8e8f0] text-sm"> Configure your name and email </span>
+                        <hr class="my-2 text-[#e8e8f0] opacity-24">
+                    </div>
+                    <div class="">
+                        <span class="text-[#00FF88]"> → </span>
+                        <span class="text-[#e8e8f0] text-sm"> Run git init on a new folder </span>
+                        <hr class="my-2 text-[#e8e8f0] opacity-24">
+                    </div>
+                    <div class="">
+                        <span class="text-[#00FF88]"> → </span>
+                        <span class="text-[#e8e8f0] text-sm"> Create a file and make your first commit </span>
+                        <hr class="my-2 text-[#e8e8f0] opacity-24">
+                    </div>
+                    <div class="">
+                        <span class="text-[#00FF88]"> → </span>
+                        <span class="text-[#e8e8f0] text-sm"> View your commit with git log </span>
+                    </div>
+                    <button class="border border-[#00CA4E] text-[#00CA4E] text-sm py-2 px-4 font-semibold my-6 w-fit">
+                        Start Exercise →
+                    </button>
+                </div>
+
+            </div>
+            <div
+                class="card bg-[#111118] py-6 px-8 flex flex-col gap-2 border border-[#2a2a3e] hover:border-[#7c3aed] transition-colors">
+                <span class="border border-[#7c3aed] text-[#7c3aed] text-xs uppercase py-1 px-2 w-fit mb-2">Exercise
+                    2</span>
+                <h2 class="text-[#e8e8f0] text-2xl font-bold">Branching & Merging</h2>
+                <h3 class="text-[#7070a0] text-xs py-2 mb-2">Practice the branching model — the foundation of all
+                    collaborative Git workflows.</h3>
+
+                <div class="">
+                    <div class="">
+                        <span class="text-[#00FF88]"> → </span>
+                        <span class="text-[#e8e8f0] text-sm"> Create a new feature branch </span>
+                        <hr class="my-2 text-[#e8e8f0] opacity-24">
+                    </div>
+                    <div class="">
+                        <span class="text-[#00FF88]"> → </span>
+                        <span class="text-[#e8e8f0] text-sm"> Make changes and commit on it </span>
+                        <hr class="my-2 text-[#e8e8f0] opacity-24">
+                    </div>
+                    <div class="">
+                        <span class="text-[#00FF88]"> → </span>
+                        <span class="text-[#e8e8f0] text-sm"> Switch back to main branch </span>
+                        <hr class="my-2 text-[#e8e8f0] opacity-24">
+                    </div>
+                    <div class="">
+                        <span class="text-[#00FF88]"> → </span>
+                        <span class="text-[#e8e8f0] text-sm"> Merge your feature branch in </span>
+                        <hr class="my-2 text-[#e8e8f0] opacity-24">
+                    </div>
+                    <div class="">
+                        <span class="text-[#00FF88]"> → </span>
+                        <span class="text-[#e8e8f0] text-sm"> Resolve a simple merge conflict </span>
+                    </div>
+                    <button class="border border-[#00CA4E] text-[#00CA4E] text-sm py-2 px-4 font-semibold my-6 w-fit">
+                        Start Exercise →
+                    </button>
+                </div>
+
+            </div>
+            <div
+                class="card bg-[#111118] py-6 px-8 flex flex-col gap-2 border border-[#2a2a3e] hover:border-[#7c3aed] transition-colors">
+                <span class="border border-[#7c3aed] text-[#7c3aed] text-xs uppercase py-1 px-2 w-fit mb-2">Exercise
+                    3</span>
+                <h2 class="text-[#e8e8f0] text-2xl font-bold">GitHub Workflow</h2>
+                <h3 class="text-[#7070a0] text-xs py-2 mb-2">Push your local project to GitHub and experience the remote
+                    repository workflow..</h3>
+
+
+
+
+
+
+
+
+                <div class="">
+                    <div class="">
+                        <span class="text-[#00FF88]"> → </span>
+                        <span class="text-[#e8e8f0] text-sm"> Create a free GitHub account </span>
+                        <hr class="my-2 text-[#e8e8f0] opacity-24">
+                    </div>
+                    <div class="">
+                        <span class="text-[#00FF88]"> → </span>
+                        <span class="text-[#e8e8f0] text-sm"> Create a new repo on GitHub </span>
+                        <hr class="my-2 text-[#e8e8f0] opacity-24">
+                    </div>
+                    <div class="">
+                        <span class="text-[#00FF88]"> → </span>
+                        <span class="text-[#e8e8f0] text-sm"> Connect your local repo to it </span>
+                        <hr class="my-2 text-[#e8e8f0] opacity-24">
+                    </div>
+                    <div class="">
+                        <span class="text-[#00FF88]"> → </span>
+                        <span class="text-[#e8e8f0] text-sm"> Push your commits to GitHub </span>
+                        <hr class="my-2 text-[#e8e8f0] opacity-24">
+                    </div>
+                    <div class="">
+                        <span class="text-[#00FF88]"> → </span>
+                        <span class="text-[#e8e8f0] text-sm"> View your project online </span>
+                    </div>
+                    <button class="border border-[#00CA4E] text-[#00CA4E] text-sm py-2 px-4 font-semibold my-6 w-fit">
+                        Start Exercise →
+                    </button>
+                </div>
+
+            </div>
+            <div
+                class="card bg-[#111118] py-6 px-8 flex flex-col gap-2 border border-[#2a2a3e] hover:border-[#7c3aed] transition-colors ">
+                <span class="border border-[#7c3aed] text-[#7c3aed] text-xs uppercase py-1 px-2 w-fit mb-2">Exercise 04
+                    — Final</span>
+                <h2 class="text-[#e8e8f0] text-2xl font-bold">Simulate a PR</h2>
+                <h3 class="text-[#7070a0] text-xs py-2 mb-2">Fork a practice repository, make a meaningful change, and
+                    open a real Pull Request..</h3>
+
+                <div class="">
+                    <div class="">
+                        <span class="text-[#00FF88]"> → </span>
+                        <span class="text-[#e8e8f0] text-sm"> Fork the GitStart practice repo </span>
+                        <hr class="my-2 text-[#e8e8f0] opacity-24">
+                    </div>
+                    <div class="">
+                        <span class="text-[#00FF88]"> → </span>
+                        <span class="text-[#e8e8f0] text-sm"> Clone your fork locally </span>
+                        <hr class="my-2 text-[#e8e8f0] opacity-24">
+                    </div>
+                    <div class="">
+                        <span class="text-[#00FF88]"> → </span>
+                        <span class="text-[#e8e8f0] text-sm"> Create a branch and edit a file </span>
+                        <hr class="my-2 text-[#e8e8f0] opacity-24">
+                    </div>
+                    <div class="">
+                        <span class="text-[#00FF88]"> → </span>
+                        <span class="text-[#e8e8f0] text-sm"> Push your branch to your fork </span>
+                        <hr class="my-2 text-[#e8e8f0] opacity-24">
+                    </div>
+                    <div class="">
+                        <span class="text-[#00FF88]"> → </span>
+                        <span class="text-[#e8e8f0] text-sm"> Open a Pull Request on GitHub 🎉 </span>
+                    </div>
+                    <button class="border border-[#f59e0b] text-[#f59e0b] text-sm py-2 px-4 font-semibold my-6 w-fit">
+                        Start Exercise →
+                    </button>
+                </div>
+
+            </div>
+
+
+
         </div>
+    </section>
+
+    <section id="Contribute" class="w-21/24 mx-auto py-16">
+        <h2 class="text-[#00ff88] text-xl"> —— 04 — First Contribution</h2>
+        <h1 id="herotxt" class="text-6xl mb-6 max-w-4xl font-extrabold text-[#e8e8f0]">
+            Beginner-Friendly
+            Contribution Guide
+        </h1>
+        <h2 class="text-[#7070a0]  mb-4 max-w-3xl ">You don't need to be an expert to contribute. Here's what you can do
+            and how to do it well..</h2>
+
+        <div class="parent bg-[#111118 grid grid-cols-2 gap-6 ">
+            <div class="card flex flex-col py-6">
+                <div class="flex gap-4">
+                    <span class="uppercase bg-[#0f2924] py-1 px-2 text-sm border border-[#00ff88] text-[#00ff88] h-fit">
+                        easy
+                    </span>
+
+                    <div class="">
+                        <h2 class="text-[#e8e8f0] text-base font-bold leading-none"> Fix Typos & Grammar
+                        </h2>
+
+                        <h3 class="text-[#7070a0] text-xs py-2 mb-2">The most accessible contribution. Find and fix
+                            spelling mistakes or grammatical errors in documentation. Maintainers love these PRs.</h3>
+                    </div>
+
+                </div>
+                <hr class="text-[#7070a0] opacity-45 mb-4">
+
+                <div class="flex gap-4 ">
+                    <span class="uppercase bg-[#0f2924] py-1 px-2 text-sm border border-[#00ff88] text-[#00ff88] h-fit">
+                        easy
+                    </span>
+
+                    <div class="">
+                        <h2 class="text-[#e8e8f0] text-base font-bold leading-none">
+                            Improve Documentation
+                        </h2>
+
+                        <h3 class="text-[#7070a0] text-xs py-2 mb-2">Clarify confusing sections, add missing examples,
+                            or translate docs. Great for building confidence and understanding the project.</h3>
+                    </div>
+
+                </div>
+                <hr class="text-[#7070a0] opacity-45 mb-4">
+
+                <div class="flex gap-4 ">
+                    <span class="uppercase bg-[#0f2924] py-1 px-2 text-sm border border-[#00ff88] text-[#00ff88] h-fit">
+                        medium
+                    </span>
+
+                    <div class="">
+                        <h2 class="text-[#e8e8f0] text-base font-bold leading-none">
+                            Add Code Examples
+                        </h2>
+
+                        <h3 class="text-[#7070a0] text-xs py-2 mb-2">Many projects need more usage examples. If you
+                            understand how something works, write an example and contribute it.</h3>
+                    </div>
+
+                </div>
+                <hr class="text-[#7070a0] opacity-45 mb-4">
+
+                <div class="flex gap-4 ">
+                    <span class="uppercase bg-[#0f2924] py-1 px-2 text-sm border border-[#00ff88] text-[#00ff88] h-fit">
+                        medium
+                    </span>
+
+                    <div class="">
+                        <h2 class="text-[#e8e8f0] text-base font-bold leading-none">
+                            Good First Issue Bugs
+                        </h2>
+
+                        <h3 class="text-[#7070a0] text-xs py-2 mb-2">Look for issues tagged "good first issue" or "help
+                            wanted" — these are intentionally left for new contributors by maintainers.</h3>
+                    </div>
+
+                </div>
+                <hr class="text-[#7070a0] opacity-45 mb-4">
+
+                <div class="flex gap-4 ">
+                    <span class="uppercase bg-[#0f2924] py-1 px-2 text-sm border border-[#00ff88] text-[#00ff88] h-fit">
+                        hard
+                    </span>
+
+                    <div class="">
+                        <h2 class="text-[#e8e8f0] text-base font-bold leading-none">
+                            Feature Contributions
+                        </h2>
+
+                        <h3 class="text-[#7070a0] text-xs py-2 mb-2">After understanding the codebase, you can work on
+                            new features. Always open an issue first to discuss your plan with maintainers.</h3>
+                    </div>
+
+                </div>
+                <hr class="text-[#7070a0] opacity-45 mb-4">
+
+
+            </div>
+            <div class="flex flex-col gap-4">
+                <div class="card flex flex-col py-6 border-l-3 px-6 border-l-[#f59e0b] border-[#2a2a3e] border-2">
+                    <h2 class="text-[#f59e0b] text-lg font-bold mb-6"> // Pro Tips for Your First PR
+                    </h2>
+
+                    <div class="flex gap-4">
+                        <div class="">
+                            <h2 class="text-[#e8e8f0] text-base font-bold leading-none"> Write good commit messages
+                            </h2>
+
+                            <h3 class="text-[#7070a0] text-xs py-2 mb-2">Use the format:
+                                <span class="text-[#00ff88]"> type: description</span>. Types: feat,
+                                fix, docs, style, refactor. Keep it under 72 chars.
+                            </h3>
+                        </div>
+
+                    </div>
+                    <hr class="text-[#7070a0] opacity-45 mb-4">
+
+                    <div class="flex gap-4 ">
+
+
+                        <div class="">
+                            <h2 class="text-[#e8e8f0] text-base font-bold leading-none">
+                                Read CONTRIBUTING.md first
+                            </h2>
+
+                            <h3 class="text-[#7070a0] text-xs py-2 mb-2">Every project has its own rules. Always read
+                                the
+                                contribution guide before submitting. Missing this is the #1 rookie mistake.</h3>
+                        </div>
+
+                    </div>
+                    <hr class="text-[#7070a0] opacity-45 mb-4">
+
+                    <div class="flex gap-4 ">
+
+
+                        <div class="">
+                            <h2 class="text-[#e8e8f0] text-base font-bold leading-none">
+                                One PR, one purpose
+                            </h2>
+
+                            <h3 class="text-[#7070a0] text-xs py-2 mb-2">Don't fix multiple unrelated things in one PR.
+                                Focused PRs are easier to review and more likely to get merged quickly.</h3>
+                        </div>
+
+                    </div>
+                    <hr class="text-[#7070a0] opacity-45 mb-4">
+
+                    <div class="flex gap-4 ">
+
+
+                        <div class="">
+                            <h2 class="text-[#e8e8f0] text-base font-bold leading-none">
+                                Be patient and respond to reviews
+                            </h2>
+
+                            <h3 class="text-[#7070a0] text-xs py-2 mb-2">Maintainers are volunteers. If they request
+                                changes, respond politely and promptly. Reviews are how you grow as a developer.</h3>
+                        </div>
+
+                    </div>
+                    <hr class="text-[#7070a0] opacity-45 mb-4">
+
+                    <div class="flex gap-4 ">
+
+
+                        <div class="">
+                            <h2 class="text-[#e8e8f0] text-base font-bold leading-none">
+                                Test your changes
+                            </h2>
+
+                            <h3 class="text-[#7070a0] text-xs py-2 mb-2">Run the test suite before pushing. Broken tests
+                                =
+                                rejected PR. Check that your change actually works as expected.</h3>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="card flex flex-col py-6 px-6 border-[#2a2a3e] border-2">
+                    <h2 class="text-[#00ff88] text-lg font-bold mb-4">Where to Find Projects
+                    </h2>
+
+                    <div class="text-[#7070a0] text-sm">
+                        → <span class="text-[#e8e8f0]">github.com/explore</span> — trending repos
+                    </div>
+                    <div class="text-[#7070a0] text-sm">
+                        → <span class="text-[#e8e8f0]">goodfirstissue.dev</span> — curated beginner issues
+                    </div>
+                    <div class="text-[#7070a0] text-sm">
+                        → <span class="text-[#e8e8f0]">up-for-grabs.net</span> — filtered project list
+                    </div>
+                    <div class="text-[#7070a0] text-sm">
+                        → <span class="text-[#e8e8f0]">firstcontributions.github.io</span> — practice PRs
+                    </div>
+                    <div class="text-[#7070a0] text-sm">
+                        → <span class="text-[#e8e8f0]">codetriage.com</span> — daily open issues
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+
     </section>
 
 </body>

@@ -2,11 +2,16 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Space Mono", monospace;
 }
 
-#herotxt {
+#herotxt,
+.parent .card h2 {
     font-family: "Syne", sans-serif;
 }
 
