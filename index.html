@@ -15,8 +15,12 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 </head>
+<!-- [&::-webkit-scrollbar-track]:bg-gray-100  -->
+111118
 
-<body class="min-h-screen bg-[#060606]">
+<body
+    class="min-h-screen bg-[#060606] overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:bg-[#00ff88] hover:[&::-webkit-scrollbar-thumb]:bg-[#111118] [&::-webkit-scrollbar-thumb]:rounded-full transition-colors">
+
 
     <script src="script.js"> </script>
 
@@ -44,7 +48,7 @@
                 Get Started
             </button> -->
 
-            <button
+            <button onclick="window.open('https://learngitbranching.js.org/', '_blank')"
                 class="bg-[#00ff88] py-2 px-6 font-semibold transform-gpu -translate-x-1 -translate-y-1 shadow-[4px_4px_0px_#7c3aed] transition-all duration-150 hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[6px_6px_0px_#7c3aed] active:translate-x-0 active:translate-y-0 active:shadow-[2px_2px_0px_#7c3aed]">
                 Get Started
             </button>
@@ -63,11 +67,18 @@
             prior
             experience needed.</p>
         <div class="inline">
-            <button class="bg-[#00ff88] py-2 px-4 font-semibold">
-                Start Learning </button>
-            <button class="border border-[#e8e8f0] text-[#e8e8f0] py-2 px-4 font-semibold">
+
+            <button onclick="window.open('https://learngitbranching.js.org/', '_blank')"
+                class="bg-[#00ff88] py-2 px-4 font-semibold">
+                Start Learning
+            </button>
+
+            <button onclick="window.open('#Concepts', '_self')"
+                class="border border-[#e8e8f0] text-[#e8e8f0] py-2 px-4 font-semibold">
                 Get Started
             </button>
+
+
         </div>
     </section>
 
@@ -582,7 +593,8 @@
                         <span class="text-[#00FF88]"> → </span>
                         <span class="text-[#e8e8f0] text-sm"> View your commit with git log </span>
                     </div>
-                    <button class="border border-[#00CA4E] text-[#00CA4E] text-sm py-2 px-4 font-semibold my-6 w-fit">
+                    <button onclick="window.open('https://learngitbranching.js.org/', '_blank')"
+                        class="border border-[#00CA4E] text-[#00CA4E] text-sm py-2 px-4 font-semibold my-6 w-fit">
                         Start Exercise →
                     </button>
                 </div>
@@ -621,7 +633,8 @@
                         <span class="text-[#00FF88]"> → </span>
                         <span class="text-[#e8e8f0] text-sm"> Resolve a simple merge conflict </span>
                     </div>
-                    <button class="border border-[#00CA4E] text-[#00CA4E] text-sm py-2 px-4 font-semibold my-6 w-fit">
+                    <button onclick="window.open('https://learngitbranching.js.org/', '_blank')"
+                        class="border border-[#00CA4E] text-[#00CA4E] text-sm py-2 px-4 font-semibold my-6 w-fit">
                         Start Exercise →
                     </button>
                 </div>
@@ -667,7 +680,9 @@
                         <span class="text-[#00FF88]"> → </span>
                         <span class="text-[#e8e8f0] text-sm"> View your project online </span>
                     </div>
-                    <button class="border border-[#00CA4E] text-[#00CA4E] text-sm py-2 px-4 font-semibold my-6 w-fit">
+
+                    <button onclick="window.open('https://learngitbranching.js.org/', '_blank')"
+                        class="border border-[#00CA4E] text-[#00CA4E] text-sm py-2 px-4 font-semibold my-6 w-fit">
                         Start Exercise →
                     </button>
                 </div>
@@ -706,9 +721,12 @@
                         <span class="text-[#00FF88]"> → </span>
                         <span class="text-[#e8e8f0] text-sm"> Open a Pull Request on GitHub 🎉 </span>
                     </div>
-                    <button class="border border-[#f59e0b] text-[#f59e0b] text-sm py-2 px-4 font-semibold my-6 w-fit">
+
+                    <button onclick="window.open('https://learngitbranching.js.org/', '_blank')"
+                        class="border border-[#f59e0b] text-[#f59e0b] text-sm py-2 px-4 font-semibold my-6 w-fit">
                         Start Exercise →
                     </button>
+
                 </div>
 
             </div>
@@ -925,6 +943,135 @@
         </div>
 
     </section>
+
+    <section id="Resources" class="w-10/12 mx-auto py-12">
+        <h2 class="text-[#00ff88] text-xl uppercase"> —— 05 — Resources</h2>
+        <h1 id="herotxt" class="text-7xl mb-6 max-w-4xl font-extrabold text-[#e8e8f0]">
+            Continue
+            Your Journey </h1>
+        <h2 class="text-[#7070a0]  mb-4 max-w-3xl ">Curated resources to deepen your Git knowledge and discover your
+            next open-source contribution. </h2>
+
+        <div class="parent bg-[#] grid grid-cols-3 gap-6 ">
+
+            <a href="https://git-scm.com/doc">
+                <div
+                    class="card bg-[#111118] flex flex-col gap-4 py-8 px-8 border-2 border-[#2a2a3e] hover:bg-[#1a1a26] transition-colors hover:border-3 hover:border-[#00ff88]">
+                    <p class="text-sm text-[#f59e0b]">Official Docs</p>
+                    <p class="text-[#e8e8f0] text-xl font-bold max-w-sm" id="herotxt">Git Official Documentation. </p>
+                    <p class="text-[#7070a0] text-sm ">The complete, authoritative reference for every Git command
+                        and concept. Bookmark this. </p>
+                    <span class="text-[#00ff88] text-3xl">→</span>
+                </div>
+            </a>
+            <a href="https://git-scm.com/doc">
+                <div
+                    class="card bg-[#111118] flex flex-col gap-4 py-8 px-8 border-2 border-[#2a2a3e] hover:bg-[#1a1a26] transition-colors hover:border-3 hover:border-[#00ff88]">
+                    <p class="text-sm text-[#f59e0b]"> Platform Guide
+                    </p>
+                    <p class="text-[#e8e8f0] text-xl font-bold max-w-sm" id="herotxt">GitHub Docs
+                    </p>
+                    <p class="text-[#7070a0] text-sm ">Everything about GitHub — pull requests, Actions, pages, and
+                        collaborative workflows explained. </p>
+                    <span class="text-[#00ff88] text-3xl">→</span>
+                </div>
+            </a>
+
+            <a href="https://learngitbranching.js.org/">
+                <div
+                    class="card bg-[#111118] flex flex-col gap-4 py-8 px-8 border-2 border-[#2a2a3e] hover:bg-[#1a1a26] transition-colors hover:border-3 hover:border-[#00ff88]">
+                    <p class="text-sm text-[#f59e0b]"> Interactive
+                    </p>
+                    <p class="text-[#e8e8f0] text-xl font-bold max-w-sm" id="herotxt">Learn Git Branching
+
+                    </p>
+                    <p class="text-[#7070a0] text-sm ">A gorgeous visual sandbox for learning Git branching and rebasing
+                        interactively in your browser.</p>
+                    <span class="text-[#00ff88] text-3xl">→</span>
+                </div>
+            </a>
+
+            <a href="https://firstcontributions.github.io/">
+                <div
+                    class="card bg-[#111118] flex flex-col gap-4 py-8 px-8 border-2 border-[#2a2a3e] hover:bg-[#1a1a26] transition-colors hover:border-3 hover:border-[#00ff88]">
+                    <p class="text-sm text-[#f59e0b]"> Practice
+                    </p>
+                    <p class="text-[#e8e8f0] text-xl font-bold max-w-sm" id="herotxt">First Contributions
+
+
+                    </p>
+                    <p class="text-[#7070a0] text-sm ">A safe practice repo designed for your very first pull request.
+                        Thousands of beginners start here.
+                    </p>
+                    <span class="text-[#00ff88] text-3xl">→</span>
+                </div>
+            </a>
+            <a href="https://goodfirstissue.dev/">
+                <div
+                    class="card bg-[#111118] flex flex-col gap-4 py-8 px-8 border-2 border-[#2a2a3e] hover:bg-[#1a1a26] transition-colors hover:border-3 hover:border-[#00ff88]">
+                    <p class="text-sm text-[#f59e0b]"> Project Finder
+                    </p>
+                    <p class="text-[#e8e8f0] text-xl font-bold max-w-sm" id="herotxt">Good First Issue
+
+
+
+                    </p>
+                    <p class="text-[#7070a0] text-sm ">A curated list of beginner-friendly open-source issues across
+                        dozens of programming languages.
+
+                    </p>
+                    <span class="text-[#00ff88] text-3xl">→</span>
+                </div>
+            </a> <a href="https://ohshitgit.com/">
+                <div
+                    class="card bg-[#111118] flex flex-col gap-4 py-8 px-8 border-2 border-[#2a2a3e] hover:bg-[#1a1a26] transition-colors hover:border-3 hover:border-[#00ff88]">
+                    <p class="text-sm text-[#f59e0b]"> Rescue Guide
+                    </p>
+                    <p class="text-[#e8e8f0] text-xl font-bold max-w-sm" id="herotxt">Oh Shit, Git!
+
+                    </p>
+                    <p class="text-[#7070a0] text-sm ">Made a mistake? This honest, funny guide helps you undo almost
+                        any Git disaster without panic.
+
+
+                    </p>
+                    <span class="text-[#00ff88] text-3xl">→</span>
+                </div>
+            </a>
+
+
+
+
+        </div>
+
+    </section>
+
+
+    <!-- border-t border-t-[#7070a0] -->
+    <footer class="flex items-center justify-around py-8 transition-colors">
+        <div class="left text-md">
+            <a href="#">
+                <span class="text-[#00ff88]">git</span>
+                <span class="text-[#e8e8f0]">start</span>
+            </a>
+
+        </div>
+        <div class="right">
+            <p class="text-[#7070a0] text-sm">Built with ♥ By Vaibhav & Team</p>
+        </div>
+        <div class="center">
+            <ul class="flex gap-6 text-[#7070a0] text-sm">
+                <li class="hover:text-[#00ff88] transition-colors"> <a href="#Concepts">Concepts</a></li>
+                <li class="hover:text-[#00ff88] transition-colors"> <a href="#Workflow">Workflow</a></li>
+                <li class="hover:text-[#00ff88] transition-colors"> <a href="#Practice">Practice</a></li>
+                <li class="hover:text-[#00ff88] transition-colors"> <a href="#Contribute">Contribute</a></li>
+                <li class="hover:text-[#00ff88] transition-colors"> <a href="#Resources">Resources</a></li>
+            </ul>
+        </div>
+
+
+
+    </footer>
 
 </body>
 
